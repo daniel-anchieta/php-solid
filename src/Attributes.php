@@ -13,8 +13,9 @@ class Attributes
     public function __toString() : string
     {
       $result = [];
-      foreach ($this->attributes as $key=>$value) {
-        $result[] = $key . '="' . $value . '"';
+      foreach ($this->attributes as $key=>$value)
+      {
+        $result[] = $key . '="'.$value.'"';
       }
 
       return ' '.implode(' ',$result);
