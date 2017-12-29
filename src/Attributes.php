@@ -4,7 +4,7 @@ namespace Solid\Html;
 
 class Attributes
 {
-    private $attributes;
+    public $attributes;
     public function __constructor(array $attributes)
     {
         $this->attributes = $attributes;
@@ -12,12 +12,13 @@ class Attributes
 
     public function __toString() : string
     {
-      $result = [];
-      foreach ($this->attributes as $key=>$value)
-      {
-        $result[] = $key . '="'.$value.'"';
-      }
+        $result = [];
 
-      return ' '.implode(' ',$result);
+        foreach ($this->attributes as $key => $value)
+        {
+            $result[] = $key . '="' . $value . '"';
+        }
+
+        return ' ' . implode(' ' , $result);
     }
 }
