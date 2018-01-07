@@ -5,7 +5,7 @@ namespace Solid\Html;
 class Attributes
 {
     public $attributes;
-    public function __constructor(array $attributes)
+    public function __construct(array $attributes)
     {
         $this->attributes = $attributes;
     }
